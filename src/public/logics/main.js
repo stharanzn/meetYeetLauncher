@@ -166,10 +166,10 @@ const defaultOptions = {
 
 uaup.Update(defaultOptions);
 
-document.getElementById('launchApp').addEventListener('click', function(event){
+// document.getElementById('launchApp').addEventListener('click', function(event){
 
-    uaup.LaunchApplication(defaultOptions)
-})
+//     uaup.LaunchApplication(defaultOptions)
+// })
 
 //#endregion
 
