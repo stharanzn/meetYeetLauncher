@@ -1,0 +1,91 @@
+
+<!-- zip link:
+  https://drive.google.com/file/d/1EKfbY9iGoV85rGJXAuivh8JbvgypJMLg/view?usp=share_link
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meet Yeet</title>
+    <link rel="stylesheet" href="./public/stylesheets/style.css" />
+  </head>
+  <body>
+
+    <div class="video-bg">
+      <video width="800" height="400" preload="auto" autoplay loop muted>
+        <source src="./public/resources/videos/backgroundVid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div id="close">
+      <p>✕</p>
+    </div>
+
+    <div id="appArea">      
+
+      <div class="content">
+        <label id = "statusLabel">Checking Build...</label>
+
+        <!-- #region login Fragment -->
+
+        <!-- signin existing user fragment -->
+            <div class="fragmentBack" id="loginFragment">
+                <div class="form-group" style="margin-bottom: 45px;">
+                    <input id="loginUserEmail" type="text" name="name" required />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name">Email</label>
+                </div>
+                
+                <div class="form-group">                    
+                    <input id="loginUserPass" type="password" name="name" required />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name">Password</label>
+                    
+                </div>                
+                
+                <div class="back">
+                    <div id="loginUser" class="button_base b03_skewed_slide_in">
+                        <div>Login</div>
+                        <div></div>
+                        <div>Login</div>
+                    </div>
+                </div>
+                
+                <p>--------------------  OR  --------------------</p>
+                <div class="back">
+                    <div id="loginUserGoogle" class="button_base b03_skewed_slide_in">
+                        <div>Google</div>
+                        <div></div>
+                        <div>SignUp using Google</div>
+                    </div>
+                </div>
+                                            
+                <!-- <p id="forgotPassword">Can't signin?</p> -->
+            </div>
+
+        <!-- #endregion -->
+
+        <div class="foot">
+          
+          <progress id="download" max = "100" value="0"></progress>
+          <br>
+          <button id="launchApp">Launch App</button>
+        </div>
+      </div>      
+
+      
+
+      <div id="toaster"></div>
+      
+    </div>   
+
+    
+    <script src="./public/logics/main.js"></script>
+    
+
+  </body>
+</html>
